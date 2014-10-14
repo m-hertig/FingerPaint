@@ -32,12 +32,17 @@ class ofApp : public ofxiOSApp {
         vector <ofVec2f>points;
         vector <int>pointsRotation;
         ofMesh mesh;
+        int heroX;
+        int heroY;
+        float enemyX;
+        float enemyY;
         int boxBtnX;
         int boxBtnY;
         int eraseBtnX;
         int eraseBtnY;
         int rotateBtnX;
         int rotateBtnY;
+        int maxBoxes;
         int btnWidth;
         int blockHeight;
         bool drawMode;

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8EBF8F71-1EEE-4A16-ABD4-5007739BD2BB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FingerPaint</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>824D4738-EA4C-4C68-AC8A-DC764F632BC7</key>
+		<string>https://github.com/NickHardeman/ofxBullet.git</string>
+		<key>B27E0708-E226-45F9-90A6-07518DACBD72</key>
+		<string>https://github.com/martinhertig/FingerPaint.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FingerPaint.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>824D4738-EA4C-4C68-AC8A-DC764F632BC7</key>
+		<string>../../../../../../of_v20141010_osx_release/addons/ofxBullet</string>
+		<key>B27E0708-E226-45F9-90A6-07518DACBD72</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/martinhertig/FingerPaint.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B27E0708-E226-45F9-90A6-07518DACBD72</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B27E0708-E226-45F9-90A6-07518DACBD72</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FingerPaint</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>824D4738-EA4C-4C68-AC8A-DC764F632BC7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxBullet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

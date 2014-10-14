@@ -21,6 +21,11 @@ void ofApp::setup(){
     rotateBtnX = ofGetWidth()-100;
     rotateBtnY = ofGetHeight()-260;
     btnWidth = 60;
+    maxBoxes = 40;
+    enemyX = 10;
+    enemyY = 10;
+    heroX = ofGetWidth()/2;
+    heroY = ofGetHeight()/2;
 
 }
 
@@ -63,11 +68,18 @@ void ofApp::update(){
         }
         ofVec3f vec3f = ofVec3f(points[i].x, points[i].y);
         mesh.addVertex(vec3f);
+        if (enemyX - heroX) {
+            enemyX = enemyX+0.1;
+        }
+        if (enemyY - heroY) {
+            enemyY = enemyY+0.1;
+        }
     }
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    
     ofBackground(0,0,0);
         for (int i=0; i<points.size(); i++) {
             ofPushMatrix();
@@ -82,6 +94,15 @@ void ofApp::draw(){
         }
     //mesh.draw();
     drawButtons();
+    ofSetColor(255, 255,255);
+    ofEllipse(heroX, heroY, 20, 20);
+    ofPushMatrix();
+    float a = atan2(enemyY-heroY, enemyX-heroX);
+    ofRotate(-a);
+    ofSetLineWidth(2);
+    ofLine(enemyX, enemyY, enemyX+10, enemyY);
+    ofPopMatrix();
+    
 }
 
 //--------------------------------------------------------------
@@ -162,8 +183,17 @@ void ofApp::touchAction(int x, int y) {
         }
     } else
     {
-        points.push_back(vec);
-        pointsRotation.push_back(0);
+        if (points.size() > maxBoxes) {
+            points.erase(points.begin());
+            pointsRotation.erase(pointsRotation.begin());
+        }
+        
+        if (points.size() > 0 && points[points.size()-1].distance(vec)<10) {
+            return;
+        } else {
+            points.push_back(vec);
+            pointsRotation.push_back(0);
+        }
     }
    
 }
